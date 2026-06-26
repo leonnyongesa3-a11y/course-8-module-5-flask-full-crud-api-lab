@@ -42,7 +42,7 @@ def create_event():
     events.append(new_event)
 
     # TODO: Task 4 - Return and Handle Results
-    return jsonify({"message": "Event created successfully", "event": new_event.to_dict()}), 201
+    return jsonify(new_event.to_dict()), 201
 
 # TODO: Task 1 - Define the Problem
 # Update the title of an existing event
