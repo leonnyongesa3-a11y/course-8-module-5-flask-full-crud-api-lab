@@ -2,10 +2,6 @@ from flask import Flask, jsonify, request
 
 app = Flask(__name__)
 
-@app.route("/events", methods=["GET"])
-def get_events():
-    return jsonify([event.to_dict() for event in events])
-
 # Simulated data
 class Event:
     def __init__(self, id, title):
